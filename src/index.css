@@ -1,0 +1,37 @@
+body {
+  margin: auto;
+  padding: 2rem;
+}
+
+div.body {
+  background-color: red;
+  width: 100%;
+}
+
+div.settings{
+  background-color: aqua;
+  text-align: end;
+}
+
+div.body {
+  background-color: yellow;
+}
+
+div.title {
+  text-align: center;
+}
+
+div.filter {
+  background-color: black;
+}
+
+div.button{
+  background-color: red;
+  width: 95%;
+  display: inline-flex;
+}
+
+div.main {
+  background-color: pink;
+  text-align: center;
+}
