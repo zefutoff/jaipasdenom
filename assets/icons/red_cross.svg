@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+  <!-- Cercle rouge -->
+  <circle cx="12" cy="12" r="9" fill="none" stroke="red" stroke-width="2" />
+
+  <!-- Croix rouge avec bords arrondis -->
+  <line x1="8" y1="8" x2="16" y2="16" stroke="red" stroke-width="2" stroke-linecap="round" />
+  <line x1="16" y1="8" x2="8" y2="16" stroke="red" stroke-width="2" stroke-linecap="round" />
+</svg>

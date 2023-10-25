@@ -1,0 +1,194 @@
+/* App.css */
+body {
+  margin: auto;
+  padding: 1rem;
+  background-color: #060714;
+}
+
+div.settings {
+  text-align: start;
+}
+
+/* Styles pour les boutons communs */
+.button {
+  background: none;
+  background-color: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styles pour les boutons de filtre */
+.filter-button {
+  padding: 5px 10px;
+  margin: 5px;
+  border: 2px solid lightblue;
+  border-radius: 30px;
+  background-color: transparent;
+  color: lightblue;
+  font-size: 16px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.filter-button.active {
+  background-color: rgba(153, 210, 229, 0.37);
+  color: white;
+}
+
+.filter-button:hover {
+  background-color: lightblue;
+  color: white;
+}
+
+/* Styles pour les boutons d'ajout de catégorie */
+.add-category-button {
+  background: none;
+  border: none;
+}
+
+/* Styles pour les boutons de croix et de coche */
+.cross-button,
+.coche-button {
+  background: none;
+  border: none;
+}
+
+/* Styles pour les images des boutons */
+.filter-image {
+  padding-left: 5px;
+}
+
+/* Styles pour les zones de texte */
+.filter-settings-search,
+.add-filter-input-text {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #303841;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Styles pour les titres et textes */
+.modal,
+.title,
+.main {
+  color: white;
+}
+
+/* Styles pour le menu */
+.menu-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  cursor: pointer;
+  position: relative;
+  transition: left 0.3s ease-in-out;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: -350px;
+  width: 350px;
+  height: 100%;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+/*Affiche le menu*/
+.menu.open {
+  left: 0;
+}
+
+img.settings-button {
+  width: 48px;
+  padding-left: 0;
+  transition: fill 0.3s ease-in-out;
+}
+
+div.title {
+  text-align: center;
+  font-size: 100px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-buttons {
+  /*Peux pas scroll avec la souris*/
+  width: 100%;
+  max-width: 70%;
+  overflow-x: auto;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.filter-buttons::-webkit-scrollbar-thumb {
+  background-color: lightblue;
+  border-radius: 10px;
+}
+
+
+.modal {
+  background-color: #060714;
+  padding: 20px;
+  border-radius: 20px;
+  z-index: 1002;
+  width: 30%;
+  height: 50%;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.filter-button-list {
+  text-align: center;
+}
+
+.add-category {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #060714;
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  z-index: 1004;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.add-category-button {
+  text-align: end;
+  background: none;
+  border: none;
+}
+
+.filter-settings-button{
+  background: none;
+  size: 20px;
+  border: none;
+}
+
+.filter-settings-image{
+  size: 50px;
+}
